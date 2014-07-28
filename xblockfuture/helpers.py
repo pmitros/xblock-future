@@ -40,6 +40,6 @@ def futureclass(original_class, config={}):
     # Step 2: Manage grading
     if hasattr(original_class, grade) and isinstance(grade, Grade):
         original_class.has_score = True
-        original_class.max_score = lambda x: return x.grade.get_maxscore()
+        original_class.max_score = lambda x: x.grade.get_maxscore()
 
     return original_class
