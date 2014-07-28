@@ -20,7 +20,7 @@ class Grade():
     def get_maxscore(self):
         return self._maxscore
 
-def future(original_class, config={}):
+def futureclass(original_class, config={}):
     ''' Modify the class c to support future proposed features. 
     '''
     # Step 1: Give it a useful name. 
